@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Homework Helper – Smart Learning Assistant for Students</title>
+<style>
+  :root{
+    --ink:#0e1420;
+    --paper:#f6f7fb;
+    --panel:#ffffff;
+    --accent:#5b5bf0;
+    --accent-2:#00c2a8;
+    --muted:#5b6472;
+    --line:#e3e6ee;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height:1.6;
+  }
+  .hero{
+    background:linear-gradient(135deg,#12142b 0%,#1b1f4a 55%,#232a6b 100%);
+    color:#fff;
+    padding:80px 24px 70px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    right:-80px; top:-80px;
+    width:320px; height:320px;
+    background:radial-gradient(circle, rgba(0,194,168,.35), transparent 70%);
+  }
+  .hero-inner{max-width:900px; margin:0 auto; position:relative; z-index:1;}
+  .eyebrow{
+    display:inline-block;
+    font-size:.75rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent-2);
+    border:1px solid rgba(255,255,255,.25);
+    padding:5px 12px;
+    border-radius:999px;
+    margin-bottom:22px;
+  }
+  h1{
+    font-size:2.6rem;
+    margin:0 0 16px;
+    font-weight:800;
+    letter-spacing:-0.02em;
+  }
+  .hero p.lead{
+    font-size:1.1rem;
+    color:#c9cdf5;
+    max-width:620px;
+    margin:0;
+  }
+  main{max-width:900px; margin:-40px auto 0; padding:0 24px 80px;}
+  section.card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:36px 40px;
+    margin-bottom:24px;
+    box-shadow:0 4px 20px rgba(20,25,60,.05);
+  }
+  h2{
+    font-size:1.3rem;
+    margin:0 0 20px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  h2 .tag{
+    font-size:.7rem;
+    background:var(--accent);
+    color:#fff;
+    padding:3px 9px;
+    border-radius:6px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+  }
+  ul.features{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:14px 24px;}
+  ul.features li{
+    padding-left:26px;
+    position:relative;
+    color:var(--muted);
+  }
+  ul.features li::before{
+    content:"";
+    position:absolute; left:0; top:9px;
+    width:9px; height:9px;
+    border-radius:2px;
+    background:var(--accent-2);
+  }
+  .tech-grid{display:flex; flex-wrap:wrap; gap:10px;}
+  .tech-pill{
+    background:#eef0fb;
+    color:#2f2f8f;
+    padding:7px 14px;
+    border-radius:8px;
+    font-size:.85rem;
+    font-weight:600;
+  }
+  .placeholder{
+    border:1.5px dashed var(--line);
+    border-radius:12px;
+    padding:34px;
+    text-align:center;
+    color:var(--muted);
+    font-size:.9rem;
+    background:#fafbff;
+  }
+  .shots{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px;}
+  p.muted{color:var(--muted); margin:0 0 16px;}
+  .contact{
+    display:flex; flex-wrap:wrap; gap:12px 30px;
+    color:var(--muted);
+  }
+  .contact strong{color:var(--ink);}
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:.85rem;
+    padding:30px 24px 60px;
+  }
+  code{background:#eef0fb; padding:2px 6px; border-radius:4px; font-size:.85em;}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Student Tools · AI</span>
+    <h1>AI Homework Helper</h1>
+    <p class="lead">Smart Learning Assistant for Students — a modern web app that helps students solve homework, understand difficult topics, generate summaries, and get fast, accurate, student-friendly answers powered by AI.</p>
+  </div>
+</div>
+
+<main>
+
+  <section class="card">
+    <h2><span class="tag">01</span>Description</h2>
+    <p class="muted">AI Homework Helper is a modern web application that helps students solve homework, understand difficult topics, generate summaries, answer questions, and improve learning using Artificial Intelligence. It features a clean, responsive interface and provides fast, accurate, and student-friendly assistance.</p>
+  </section>
+
+  <section class="card">
+    <h2><span class="tag">02</span>Features</h2>
+    <ul class="features">
+      <li>AI-powered homework solving for multiple subjects</li>
+      <li>Simplified explanations of difficult topics</li>
+      <li>Automatic summary generation from notes or text</li>
+      <li>Instant answers to student questions</li>
+      <li>Interactive chat-style interface</li>
+      <li>Fully responsive design (mobile, tablet, desktop)</li>
+      <li>Fast and accurate AI responses</li>
+      <li>Clean and student-friendly UI/UX</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2><span class="tag">03</span>Technologies Used</h2>
+    <div class="tech-grid">
+      <span class="tech-pill">HTML5</span>
+      <span class="tech-pill">CSS3</span>
+      <span class="tech-pill">JavaScript</span>
+      <span class="tech-pill">AI API</span>
+      <span class="tech-pill">Git & GitHub</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><span class="tag">04</span>Project Image</h2>
+    <div class="placeholder">
+      Add your main project banner here, e.g.<br>
+      <code>&lt;img src="images/banner.png" alt="Project Banner"&gt;</code>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><span class="tag">05</span>International Uses</h2>
+    <p class="muted">AI Homework Helper is built to support students across the world by:</p>
+    <ul class="features" style="grid-template-columns:1fr;">
+      <li>Assisting learners in different countries and education systems</li>
+      <li>Supporting multiple languages (can be extended for localization)</li>
+      <li>Helping students in remote or under-resourced areas access quality learning support</li>
+      <li>Acting as a 24/7 personal tutor regardless of time zone</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2><span class="tag">06</span>Screenshots</h2>
+    <div class="shots">
+      <div class="placeholder">Home Page<br><code>images/screenshot-home.png</code></div>
+      <div class="placeholder">Chat Interface<br><code>images/screenshot-chat.png</code></div>
+      <div class="placeholder">Summary Feature<br><code>images/screenshot-summary.png</code></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><span class="tag">07</span>Contact Information</h2>
+    <div class="contact">
+      <div><strong>Name:</strong> Wajdan Ali Shah</div>
+      <div><strong>Roll No:</strong> 4580</div>
+      <div><strong>Email:</strong> your-email@example.com</div>
+      <div><strong>GitHub:</strong> your-github-profile-link</div>
+      <div><strong>LinkedIn:</strong> your-linkedin-profile-link</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>⭐ If you find this project helpful, don't forget to star it on GitHub.</footer>
+
+</body>
+</html>
